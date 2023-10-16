@@ -1,0 +1,26 @@
+div {
+  width: 600px;
+}
+
+@media (max-width: 768px) {
+  div {
+    width: 90%; /* Use the full width of the parent container */
+    height: auto; /* Allow the height to adjust automatically */
+  }
+}
+
+.date-range-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart-container {
+  width: 600px;
+  height: 1200px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10px;
+}

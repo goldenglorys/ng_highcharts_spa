@@ -1,0 +1,30 @@
+<div class="custom-dialog">
+    <h2 mat-dialog-title>{{ operation == 'add' ? 'Add Chart' : 'Edit Chart' }}</h2>
+    <mat-dialog-content>
+        <form>
+            <ng-container *ngIf="operation == 'add'">
+                <mat-form-field>
+                    <mat-label>Charts</mat-label>
+                    <mat-select [formControl]="charts" multiple>
+                        <mat-option *ngFor="let chart of chartList" [value]="chart">{{chart}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </ng-container>
+            <ng-container *ngIf="operation == 'edit'" [formGroup]="form">
+                <mat-form-field>
+                    <mat-label>Edit Name</mat-label>
+                    <input matInput formControlName="chartName" name="chartName" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Edit Type</mat-label>
+                    <input matInput formControlName="chartType" name="chartType" required>
+                </mat-form-field>
+            </ng-container>
+        </form>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-button (click)="closeDialog()">Cancel</button>
+        <button mat-button (click)="onOkClick()" [mat-dialog-close]="selectedCharts" cdkFocusInitial>{{ operation ==
+            'add' ? 'Add' : 'Save' }}</button>
+    </mat-dialog-actions>
+</div>
