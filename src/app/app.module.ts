@@ -23,6 +23,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -51,6 +54,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatDialogModule,
     MatSelectModule,
     MatIconModule,
+    MatMenuModule,
+    MatToolbarModule,
 
     HttpClientModule,
     FormsModule,

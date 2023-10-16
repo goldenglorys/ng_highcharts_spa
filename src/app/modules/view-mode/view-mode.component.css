@@ -1,14 +1,3 @@
-div {
-  width: 600px;
-}
-
-@media (max-width: 768px) {
-  div {
-    width: 90%; /* Use the full width of the parent container */
-    height: auto; /* Allow the height to adjust automatically */
-  }
-}
-
 .date-range-container {
   display: flex;
   justify-content: center;
