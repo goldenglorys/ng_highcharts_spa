@@ -10,14 +10,14 @@ This is a single-page web application developed using Angular that allows users 
 ## View Mode
 - List of Charts: In the "View Mode," users can explore a list of charts, which are dynamically generated or fetched from a public API. Each chart displays a time series with "value" and "date" fields.
 
-- Date Range Filter: A date range filter is available for users to narrow down the data displayed on the charts. Selecting specific dates will affect the charts' visualizations. The date range filter is hidden if there are no charts to filter.
+- Date Range Filter: A date range filter is available for users to narrow down the data displayed on the charts. Selecting specific dates will affect the charts' visualizations.
 
 ## Settings
 - List of Charts: In the "Settings" route, users can view a list of charts and perform various operations on them.
 
-- Add New Chart: Users have the option to add a new chart. When adding a chart, they can specify a name, type (e.g., line, spline, area), and color. The new chart settings will be applied after saving.
+- Add New Chart: Users have the option to add a new chart.
 
-- Edit Existing Chart: For existing charts, users can edit their settings. They can modify the chart's name, type, and color. Any changes will be saved and applied to the chart.
+- Edit Existing Chart: For existing charts, users can edit their settings.
 
 - Remove Chart: Users also have the ability to remove charts they no longer need.
 
@@ -36,7 +36,7 @@ The project utilizes the following libraries and technologies:
 # Getting Started
 To run the application locally, follow these steps:
 
-1. Clone the project repository from [Github]https://github.com/goldenglorys/ng_highcharts_spa
+1. Clone the project repository from (Github)[https://github.com/goldenglorys/ng_highcharts_spa]
 2. Navigate to the project directory and run the following command to install dependencies:
 
     ```npm install```
