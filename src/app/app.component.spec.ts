@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'natlex_angular_spa'`, () => {
+  it(`should have as title 'natlex-angular-spa'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('natlex_angular_spa');
+    expect(app.title).toEqual('natlex-angular-spa');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('natlex_angular_spa app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('natlex-angular-spa app is running!');
   });
 });
